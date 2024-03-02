@@ -1,0 +1,42 @@
+---
+import Card from "../component/Card.astro"
+---
+
+<!-- component -->
+<section>
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
+          <div class="grid place-content-center rounded bg-orange-500 p-6 sm:p-8">
+            <div class="mx-auto max-w-md text-center lg:text-left">
+              <header>
+                <h2 class=" font-bold text-gray-100 sm:text-6xl text-4xl ">Watches</h2>
+    
+                <p class="mt-4 text-gray-200 md:tex-7xl text-6xl">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet
+                  provident nulla error!
+                </p>
+              </header>
+    
+              <a
+                href="#"
+                class="mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring"
+              >
+                Shop All
+              </a>
+            </div>
+          </div>
+    
+          <div class="lg:col-span-2 lg:py-8">
+            <ul class="grid grid-cols-2 gap-4">
+              <li>
+                <Card/>
+              </li>
+    
+              <li>
+                <Card/>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>

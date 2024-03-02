@@ -1,0 +1,30 @@
+---
+import Layout from "../layout/Layout.astro";
+import BannerAbout from "../component/BannerAbout.astro";
+import Gallery from "../component/Gallery.astro";
+import Movieprincipal from "../component/Movieprincipal.astro";
+import Contact from "../component/Contact.astro"
+---
+
+<Layout>
+
+  <BannerAbout/>
+
+	<div class="py-10 flex items-center min-h-14 justify-center flex-col">
+  <span class="font-extrabold leading-10 tracking-tight  text-[#201515] text-center sm:leading-none text-5xl sm:text-9xl">Gallery</span>
+  <p class= "  justify-center align-baseline mt-3 md:text-6xl text-4xl  text-gray-600 text-center md:pt-20 pt-5 md:w-[70%] w-80 "><span class="uppercase font-semibold">Enjoy</span> several samples of our artists, shared <span class="uppercase font-semibold text-orange-600">by them on our platform</span> so that the client can see their talent</p>
+	</div>
+
+  <Gallery/>
+  <Movieprincipal/>
+  <Contact/>
+</Layout>
+
+
+
+<style>
+	p{
+    letter-spacing: .1em;
+  }
+
+</style>

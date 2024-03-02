@@ -1,0 +1,22 @@
+---
+import Layout from "../layout/Layout.astro"
+import Best from "../component/Best.astro"
+import Heroshop from "../component/Heroshop.astro";
+import Product from "../component/Product.astro";
+import Servicio from "../component/Servicio.astro"
+---
+
+<Layout>
+<Heroshop/>
+<slot/>
+<Best/>
+<Servicio/>
+<h1 class="font-black md:text-9xl text-5xl ml-7 flex text-orange-600 uppercase p-14">Product</h1>
+<Product/>
+
+</Layout>
+
+<style>
+
+
+</style>

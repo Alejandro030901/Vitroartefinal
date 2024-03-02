@@ -1,0 +1,350 @@
+---
+import Layout from "../layout/Layout.astro"
+---
+
+<Layout>
+        <main class="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
+      <div class="border shadow-sm rounded-lg p-2">
+        <div class="relative w-full overflow-auto">
+          <table class="w-full caption-bottom text-sm">
+            <thead class="[&amp;_tr]:border-b">
+              <tr class=" invisible md:visible  border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted ">
+                <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 w-[100px]">
+                  Order
+                </th>
+                <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 min-w-[150px]">
+                  Name
+                </th>
+                <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  Phone
+                </th>
+                <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  Date
+                </th>
+                <th class="h-12 px-4 align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  Description
+                </th>
+                <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">
+                  Service
+                </th>
+                <th class="h-12 px-4 align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody class="[&amp;_tr:last-child]:border-0">
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0  md:text-right text-left">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+              
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-state="closed"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">#3210</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Olivia Martin</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  +53 55521920
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden md:table-cell">
+                  February 20, 2022
+                </td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi autem perspiciatis id inventore accusantium quae sapiente consequatur blanditiis, nisi libero non sit et officia praesentium delectus aliquam, eum laborum ut?</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 hidden sm:table-cell">Designer Vitral</td>
+                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+                    <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    type="button"
+                    id="radix-:rs:"
+                    aria-haspopup="menu"
+                    aria-expanded="true"
+                    data-state="closed"
+                    onclick="displayOptions()"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span class="sr-only">Actions</span>
+                    <span class="sr-only">Actions</span>
+                  </button> 
+                </td>
+              </tr>
+              
+
+              
+              
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+        
+</Layout>
+
+    <style>
+       tr:hover{
+        background-color:#e76d0949;
+        cursor: pointer;
+       }
+
+       @media (max-width:500px) {
+        tr{
+         display:flex;
+         flex-direction: column;
+       }
+    }
+    </style>
+    
