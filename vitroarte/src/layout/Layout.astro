@@ -14,7 +14,7 @@ import  Footer from "../component/Footer.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<body class="bg-white">
 
         <Header/>
         <slot/>
@@ -36,9 +36,6 @@ import  Footer from "../component/Footer.astro";
 	src: url('./public/Fonts/silver_buttercup/Silver Buttercup.ttf');
 }
 
-body {
-	background: #FFFF;
-}
 
 h1,
 h2,
@@ -51,5 +48,17 @@ span {
 p {
 	font-family: 'silver';
 }
+
+h1{
+	color:#003049;
+}
+
+
+
+
+
+
+
+
 	
 </style>
