@@ -1,13 +1,25 @@
+---
+interface Props {
+    img:string;
+    img_dos:string;
+    tittle:string;
+    price:number;
+
+}
+
+const{img,img_dos,tittle,price}=Astro.props;
+---
+
+
 <a href="ProductOverbiew" class="group block overflow-hidden">
   <div class="relative h-[350px] sm:h-[450px]">
-    <img
-      src="https://images.unsplash.com/photo-1529908537380-8f8999f17a39?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    <img src={img}
       alt=""
       class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
     />
 
     <img
-      src="https://images.unsplash.com/photo-1545584483-4e534635823b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+       src={img_dos}
       alt=""
       class="absolute rounded-4xl inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
     />
@@ -15,9 +27,9 @@
 
   <div class="relative flex items-center justify-center flex-col bg-white pt-3">
     <h3 class="text-2xl text-center text-gray-700 group-hover:underline group-hover:underline-offset-4">
-     Limited Edition Sports Trainer
+      {tittle}
     </h3>
 
-    <p class="mt-1.5 tracking-wide text-3xl font-bold text-gray-900">$189.99</p>
+    <p class="mt-1.5 tracking-wide text-3xl font-bold text-gray-900">${price}</p>
   </div>
 </a>
