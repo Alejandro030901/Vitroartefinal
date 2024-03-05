@@ -1,0 +1,58 @@
+---
+import Layout from "../layout/Layout.astro"
+---
+<Layout>
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <h2 class="mt-10 text-center text-5xl font-bold leading-9 tracking-tight text-gray-900">Sign in </h2>
+    </div>
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
+      <form class="space-y-6" action="#" method="POST">
+        <div>
+          <label for="inputname" class="block text-gray-800 font-semibold text-sm"
+            >Email</label
+          >
+          <div class="mt-2">
+            <input
+              type="text"
+              name="inputname"
+              class="block rounded-md py-1.5 px-2 ring-1 ring-inset  focus:text-gray-800 md:w-96 w-80"
+              placeholder="@gmail.com"
+            />
+          </div>
+          <label class="pt-1 block text-gray-500 text-sm">Some Description</label>
+        </div>
+        
+  
+        <div>
+          <label for="inputname" class="block text-gray-800 font-semibold text-sm"
+            >Passworld</label
+          >
+          <div class="mt-2">
+            <input
+              type="text"
+              name="inputname"
+              class="block rounded-md py-1.5 px-2 ring-1 ring-inset  focus:text-gray-800 md:w-96 w-80"
+              placeholder="Passworld"
+              
+            />
+          </div>
+        </div>
+        <label for="inputname" class="block text-gray-800 font-semibold text-sm"
+        ><a href="#" class="font-semibold text-black text-center">Forgote Passworld</a></label
+      >
+        <div class="flex align-middle items-center justify-evenly md:flex-row flex-col">
+          <button class="md:w-36 w-80 bg-black h-10 my-3 text-2xl text-center flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#dfae54] before:to-[rgb(229,163,87)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff] hover:text-black">
+            <span>SignUp</span>
+          </button>
+
+          <button class="md:w-36 w-80 bg-black text-2xl hover:text-sm text-center h-10 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 uppercase before:-left-full before:w-full before:h-full text-white">
+           <span> Create acount</span>
+          </button>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</Layout>

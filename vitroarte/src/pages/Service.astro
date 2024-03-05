@@ -3,63 +3,57 @@ import Layout from "../layout/Layout.astro";
 ---
 
 <Layout>
-<form action="" method="post">
-<section class="w-full py-12 space-y-6 bg-white dark:bg-white">
-    <div class="container px-4 md:px-6">
-      <div class="space-y-2">
-        <div class="flex flex-col items-center space-y-2">
-          <div class="space-y-1">
-            <h2 class=" font-bold tracking-tighter align-middle text-pretty md:text-8xl text-5xl">
-              Contact us
-            </h2>
-            <p class="text-gray-500 dark:text-gray-400 md:text-8xl text-6xl">
-              Get in touch using the form below.
-            </p>
+  <form id="serviceForm" method="post">
+    <section class="w-full py-12 space-y-6 bg-white dark:bg-white">
+      <div class="container px-4 md:px-6">
+        <div class="space-y-2">
+          <div class="flex flex-col items-center space-y-2">
+            <div class="space-y-1">
+              <h2 class=" font-bold tracking-tighter align-middle text-pretty md:text-8xl text-5xl">
+                Contact <br>our service
+              </h2>
+              <p class="text-gray-500 dark:text-gray-400 md:text-8xl text-6xl">
+                Get in touch using the form below.
+              </p>
+            </div>
           </div>
+          <form id="contactForm">
+            <div class="grid max-w-lg gap-4 mx-auto">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <label class="text-sm font-medium leading-none" for="name">Name</label>
+                  <input name="name" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-medium leading-none" for="email">Email</label>
+                  <input name="email" type="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="email" placeholder="Enter your email" required>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="text-sm font-medium leading-none" for="phone">Phone</label>
+                <input name="phone" type="tel" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="space-y-2">
+                <label class="font-medium text-sm" for="service">
+                  Service
+                </label>
+                <select class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="service" required>
+                  <option value="">Choose a service</option>
+                  <option>Website Design</option>
+                  <option>App Development</option>
+                  <option>SEO</option>
+                  <option>Marketing</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label class="text-sm font-medium leading-none" for="description">Description</label>
+                <textarea name="description" class="flex h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="description" placeholder="Enter description" maxlength="144" required></textarea>
+              </div>
+              <button type="submit" class="w-full py-2 px-4 bg-black hover: rounded-md text-white text-sm">Submit</button>
+            </div>
+          </form>
         </div>
-        <form id="contactForm" onsubmit="return validateForm()">
-          <div class="grid max-w-lg gap-4 mx-auto">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="space-y-2">
-                <label class="text-sm font-medium leading-none" for="name">Name</label>
-                <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="name" placeholder="Enter your name" required>
-              </div>
-              <div class="space-y-2">
-                <label class="text-sm font-medium leading-none" for="email">Email</label>
-                <input type="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="email" placeholder="Enter your email" required>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none" for="phone">Phone</label>
-              <input type="tel" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="phone" placeholder="Enter your phone number" required>
-            </div>
-            <div class="space-y-2">
-              <label class="font-medium text-sm" for="service">
-                Service
-              </label>
-              <select class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="service" required>
-                <option value="">Choose a service</option>
-                <option>Website Design</option>
-                <option>App Development</option>
-                <option>SEO</option>
-                <option>Marketing</option>
-              </select>
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none" for="description">Description</label>
-              <textarea class="flex h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-orange-500" id="description" placeholder="Enter description" maxlength="144" required></textarea>
-            </div>
-            <button type="submit" class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md text-white text-sm">Submit</button>
-          </div>
-        </form>
       </div>
-    </div>
-  </section>
-</form>
+    </section>
+  </form>
 </Layout>
-
-
-  <script>
-  
-  </script>
-  
