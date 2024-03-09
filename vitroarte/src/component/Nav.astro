@@ -1,0 +1,84 @@
+---
+import Search from "../component/Search.astro" ;
+---
+
+<section class="flex align-middle justify-evenly ">
+    <div class="home">
+        <nav class="flex justify-between flex-wrap ">
+            <div class="block lg:hidden">
+                <button
+                    class="navbar-burger flex items-center px-3 py-2 border rounded text-white hover:text-white ">
+                    <svg class="fill-current h-6 w-6 text-gray-700 " viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="main-nav" class="w-full flex-grow lg:flex items-center lg:w-auto hidden  ">
+                <div class=" lg:flex-grow mt-2 animated jackinthebox xl:mx-8 md:text-center md:text-sm text-[12px]">
+                    <a href="/"
+                        class="block lg:inline-block text-md font-bold  text-orange-500  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        HOME
+                    </a>
+                    <a href="AboutUspage"
+                        class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        ABOUT US
+                    </a>
+                    <a href="SignIn"
+                        class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        LOGIN
+                    </a>
+                    <a href="SignUp"
+                        class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        REGISTER
+                    </a>
+
+                    <a href="Service"
+                        class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        SERVICE
+                    </a>
+
+                    <a href="Shop"
+                        class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                        SHOP
+                    </a>
+                    
+                </div>
+                <div class="select mr-40 items-center justify-center">
+                </div>
+                <div class="search">
+                    <Search/>
+                </div>
+                <div class="button flex">
+                    <!-- Botón para el carrito -->
+            <a href="Cart" class="flex items-center space-x-2 text-black rounded px-4 py-2">
+                <img src="https://img.icons8.com/?size=30&id=59997&format=png" alt="cart" srcset="">
+            </a>
+            
+            <!-- Botón para las notificaciones -->
+            <a href="Adminservice" class="relative flex items-center space-x-2 text-black rounded px-4 py-2">
+                <img src="https://img.icons8.com/?size=30&id=61187&format=png" alt="" srcset="">
+                <span class="absolute top-5 right-0 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">8</span>
+            </a>
+    
+        </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+<style>
+    .home{
+            padding: 20px;
+           
+        }
+        html::-webkit-scrollbar {
+        display: none;
+        background: transparent;
+        }
+</style>
+
+<script src="../component/script/Nav.js">
+</script>

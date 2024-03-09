@@ -1,5 +1,5 @@
 ---
-import  Header  from "../component/Header.astro";
+import  Nav  from "../component/Nav.astro";
 import  Footer from "../component/Footer.astro";
 ---
 
@@ -14,9 +14,9 @@ import  Footer from "../component/Footer.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="">
+	<body class="bg-[#f7f7f6] ">
 
-        <Header/>
+        <Nav />
         <slot/>
 		<Footer/>
 
@@ -50,15 +50,7 @@ p {
 }
 
 h1{
-	color:#003049;
-}
-
-
-
-
-
-
-
-
+	color:#003049}
 	
+
 </style>

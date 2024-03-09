@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function pan() {
+document.addEventListener('DOMContentLoaded',function search() {
 
     // Get all "navbar-burger" elements
     var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

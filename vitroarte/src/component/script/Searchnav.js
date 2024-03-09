@@ -1,31 +1,20 @@
 
-const apiUrl = 'https://api.example.com/products';
+import productos from "../../../mock/productos.json";
+document.getElementById('search').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+      // event.preventDefault();
+      const searchQuery = this.value;
+      // console.log(searchQuery);
+      // console.log(productos);
+      // const filtered= productos.filter(producto => {
+      //   return producto.tittle===searchQuery
+      
+        
+      // })
 
-async function searchProductsByName(query) {
-    try {
-        const response = await fetch(`${apiUrl}?name=${query}`);
-        if (!response.ok) {
-            throw new Error('Error fetching data');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return [];
-    }
-}
+      // console.log(filtered);
+      const searchUrl = `https://www.picta.cu/search/${encodeURIComponent(searchQuery)}`;
+      window.open(searchUrl, '_blank');
 
-searchProductsByName('shoes')
-    .then(products => console.log('Productos encontrados:', products))
-    .catch(err => console.error('Error al buscar productos:', err));
-
-const badWords = ["palabra1", "palabra2", "ofensiva", "inapropiada"];
-
-function filtrarPalabrasInapropiadas(texto) {
-    let textoFiltrado = texto.toLowerCase();
-    for (const palabra of badWords) {
-        textoFiltrado = textoFiltrado.replace(new RegExp(palabra, 'g'), '****');
-    }
-    return textoFiltrado;
-}
-
-console.log(filtrarPalabrasInapropiadas("Este es un ejemplo con palabra2 ofensiva."));
+  }
+});

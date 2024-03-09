@@ -1,57 +1,63 @@
 ---
-import Card from "../component/Card.astro"
+import Card from "../component/Card.astro";
+import productos from "../../mock/productos.json";
 ---
 
 <!-- component -->
 <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
-          <div class="grid place-content-center rounded bg-[#fca311] p-6 sm:p-8">
-            <div class="mx-auto max-w-md text-center lg:text-left">
-              <header>
-                <h2 class=" font-bold text-gray-100 sm:text-6xl text-4xl ">Best product</h2>
-    
-                <p class="mt-4 text-gray-200 md:tex-7xl text-6xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet
-                  provident nulla error!
-                </p>
-              </header>
-    
-              <a
-                href="#"
-                class="shopall mt-8 inline-block rounded border border-gray-900 bg-black px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring"
-              >
-                <span>Shop All</span>
-              </a>
-            </div>
-          </div>
-    
-          <div class="lg:col-span-2 lg:py-8">
-            <ul class="grid grid-cols-2 gap-4">
-              <li>
-                <Card img={"https://images.unsplash.com/photo-1529908537380-8f8999f17a39?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} img_dos={"https://images.unsplash.com/photo-1545584483-4e534635823b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} tittle={"pantene"} price={25.00} />
-              </li>
-    
-              <li>
-                <Card img={"https://images.unsplash.com/photo-1529908537380-8f8999f17a39?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}img_dos={"https://images.unsplash.com/photo-1545584483-4e534635823b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}img_dos={"https://images.unsplash.com/photo-1545584483-4e534635823b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}tittle={"pantene"} price={25.00} />
-              </li>
-            </ul>
-          </div>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
+      <div class="grid place-content-center rounded bg-[#fca311] p-6 sm:p-8">
+        <div class="mx-auto max-w-md text-center lg:text-left">
+          <header>
+            <h2 class="font-bold text-gray-100 sm:text-6xl text-4xl">
+              Best product
+            </h2>
+
+            <p class="mt-4 text-gray-200 md:tex-7xl text-6xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              rerum quam amet provident nulla error!
+            </p>
+          </header>
+
+          <a
+            href="#"
+            class="shopall mt-8 inline-block rounded border border-gray-900 bg-black px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring"
+          >
+            <span>Shop All</span>
+          </a>
         </div>
       </div>
-    </section>
 
-    <style>
+      <div class="lg:col-span-2 lg:py-8">
+        <ul class="grid md:grid-cols-2 grid-cols-1 gap-4">
+          {productos.slice(0, 2).map((item) => (
+            <li>
+              <Card
+              img={item.img}
+              img_dos={item.imgtow}
+              tittle={item.tittle}
+              price={item.price}>
+              </Card>
+            </li>
+          ))}
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-          .shopall:hover {
-          color:white;
-          transform: translate(-0.25rem, -0.25rem);
-          background:rgb(43, 147, 203);
-          box-shadow: 0.35rem 0.45rem black;
-}
+<style>
+  .shopall:hover {
+    color: white;
+    transform: translate(-0.25rem, -0.25rem);
+    background: rgb(43, 147, 203);
+    box-shadow: 0.35rem 0.45rem black;
+  }
 
-          .shopall:active {
-            transform: translate(0);
-            box-shadow: none;
-          }
-    </style>
+  .shopall:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+</style>

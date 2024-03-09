@@ -1,5 +1,5 @@
 ---
-interface Props {
+interface Card {
     img:string;
     img_dos:string;
     tittle:string;
@@ -11,7 +11,7 @@ const{img,img_dos,tittle,price}=Astro.props;
 ---
 
 
-<a href="ProductOverbiew" class="group block overflow-hidden">
+<a href="ProductOverbiew" class="group block overflow-hidden rounded-3xl shadow-lg">
   <div class="relative h-[350px] sm:h-[450px]">
     <img src={img}
       alt=""
@@ -25,7 +25,7 @@ const{img,img_dos,tittle,price}=Astro.props;
     />
   </div>
 
-  <div class="relative flex items-center justify-center flex-col bg-white pt-3">
+  <div class="relative flex items-center justify-center flex-col bg-[#FEFEF9] pt-3">
     <h3 class="text-2xl text-center text-gray-700 group-hover:underline group-hover:underline-offset-4">
       {tittle}
     </h3>
