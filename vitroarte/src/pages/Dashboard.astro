@@ -1,0 +1,41 @@
+---
+import Notification from "../component/Notification.astro"
+import Gesproducts from "../component/Gesproducts.astro"
+import Useradmin from "../component/Useradmin.astro"
+import Productadmin from "../component/Productadmin.astro"
+import Layout from "../layout/Layout.astro"
+---
+  <Layout>
+  <Notification/>
+  <Gesproducts/>
+  <Useradmin/>
+  <Productadmin/>
+</Layout>
+
+  
+
+
+
+
+
+</div>
+
+  <style>
+   #window1, #window2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#window1 h1, #window2 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#window1 button, #window2 button {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+  </style>
